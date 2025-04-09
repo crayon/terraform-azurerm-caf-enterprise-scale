@@ -112,6 +112,7 @@ locals {
     internet_ingestion_enabled         = lookup(local.custom_settings_la_workspace, "internet_ingestion_enabled", true)
     internet_query_enabled             = lookup(local.custom_settings_la_workspace, "internet_query_enabled", true)
     reservation_capacity_in_gb_per_day = lookup(local.custom_settings_la_workspace, "reservation_capacity_in_gb_per_day", null)
+    data_collection_rule_id            = lookup(local.custom_settings_la_workspace, "data_collection_rule_id", null)
     tags                               = lookup(local.custom_settings_la_workspace, "tags", local.tags)
   }
 }

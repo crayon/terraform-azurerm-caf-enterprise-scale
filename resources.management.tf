@@ -27,6 +27,7 @@ resource "azurerm_log_analytics_workspace" "management" {
   internet_ingestion_enabled         = each.value.template.internet_ingestion_enabled
   internet_query_enabled             = each.value.template.internet_query_enabled
   reservation_capacity_in_gb_per_day = each.value.template.reservation_capacity_in_gb_per_day
+  data_collection_rule_id            = each.value.template.data_collection_rule_id
   tags                               = each.value.template.tags
 
   # allow_resource_only_permissions = each.value.template.allow_resource_only_permissions # Available only in v3.36.0 onwards
